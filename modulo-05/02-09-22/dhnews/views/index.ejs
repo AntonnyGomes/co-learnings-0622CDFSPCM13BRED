@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>DH News</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Digital<strong>House</strong></a>
+        <input class="menu-checkbox" type="checkbox" id="menu-checkbox">
+        <label class="hamburger" for="menu-checkbox">
+            <span class="hamburger-line"></span>
+        </label>
+        <nav class="nav">
+            <ul class="menu">
+                <li>
+                    <a href="#">
+                        Sobre nós
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Posts
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Site da DH
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <main>
+            <ul class="posts-list">
+                <% for (const post of posts) { %>
+                    <li>
+                        <article class="post">
+                            <img class="post-image" src="<%= post.image %>" alt="Pessoas trabalhando numa sala aberta">
+                            <section>
+                                <h5 class="post-subject"><%= post.subject %></h5>
+                                <h2 class="post-title"><%= post.title %></h2>
+                                <p class="post-content"><%= post.content %></p>
+                            </section>
+                            <div class="post-author-container">
+                                <img class="post-author-avatar" src="<%= post.author.avatar %>" alt="Avatar do autor do post">
+                                <div>
+                                    <p class="post-author-name"><%= post.author.name %></p>
+                                    <small class="post-author-details">
+                                        <time datetime="2022-08-22"><%= post.createdAt %></time> • <%= post.readingTime %> min de leitura
+                                    </small>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                <% } %>
+            </ul>
+        </main>
+    </div>
+    <footer>
+        <p>Digital House © 2022</p>
+        <ul class="footer-items">
+            <li class="footer-item">
+                <small>Termos e condições</small>
+            </li>
+            <li class="footer-item">
+                <small>Política de privacidade</small>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
