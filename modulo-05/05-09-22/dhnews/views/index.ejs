@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>DH News</title>
+</head>
+<body>
+    <%- include ('./partials/header') %>
+    <div class="container">
+        <main>
+            <ul class="posts-list">
+                <% for (const post of posts) { %>
+                    <li>
+                        <%- include ('./partials/post-card', { post }) %>
+                    </li>
+                <% } %>
+            </ul>
+        </main>
+    </div>
+    <%- include ('./partials/footer') %>
+</body>
+</html>

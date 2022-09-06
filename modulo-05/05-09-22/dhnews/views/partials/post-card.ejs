@@ -1,0 +1,22 @@
+
+<article class="post">
+    <a href="/posts/<%= post.id %>">
+        <img class="post-image" src="<%= post.image %>" alt="Pessoas trabalhando numa sala aberta">
+    </a>
+    <section>
+        <h5 class="post-subject"><%= post.subject %></h5>
+        <a href="/posts/<%= post.id %>">
+            <h2 class="post-title"><%= post.title %></h2>
+            <p class="post-content"><%= post.content %></p>
+        </a>
+    </section>
+    <div class="post-author-container">
+        <img class="post-author-avatar" src="<%= post.author.avatar %>" alt="Avatar do autor do post">
+        <div>
+            <p class="post-author-name"><%= post.author.name %></p>
+            <small class="post-author-details">
+                <time datetime="2022-08-22"><%= post.createdAt %></time> • <%= post.readingTime %> min de leitura
+            </small>
+        </div>
+    </div>
+</article>
