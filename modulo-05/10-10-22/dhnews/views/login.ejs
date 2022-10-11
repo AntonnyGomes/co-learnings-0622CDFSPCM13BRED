@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('./partials/head') %>
+    <title>DH News - Login</title>
+</head>
+<body>
+    <%- include ('./partials/header') %>
+    <div class="container">
+        <main>
+            <% if (locals.alert) { %>
+                <div class="spacing-bottom">
+                    <%- include ('./partials/alert') %>
+                </div>
+            <% } %>
+            <form action="/login" method="post">
+                <div class="input-container <%= locals.errors && locals.errors.email ? 'error' : '' %>">
+                    <label for="input-email">Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="input-email"
+                        value="<%= locals.errors ? locals.body.email : '' %>"
+                        required
+                    >
+                    <% if (locals.errors && locals.errors.email) { %>
+                        <p><%= locals.errors.email.msg %></p>
+                    <% } %>
+                </div>
+                <div class="input-container <%= locals.errors && locals.errors.password ? 'error' : '' %>">
+                    <label for="input-password">Senha</label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="input-password"
+                        value="<%= locals.errors ? locals.body.password : '' %>"
+                        required
+                    >
+                    <% if (locals.errors && locals.errors.password) { %>
+                        <p><%= locals.errors.password.msg %></p>
+                    <% } %>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </main>
+    </div>
+    <%- include ('./partials/footer') %>
+</body>
+</html>

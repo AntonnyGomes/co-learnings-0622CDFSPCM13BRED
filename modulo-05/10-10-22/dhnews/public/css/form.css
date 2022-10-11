@@ -1,0 +1,15 @@
+form, .input-container {
+    margin-bottom: 1rem; /* 16px */
+}
+
+.input-container input, .input-container textarea {
+    width: 100%;
+}
+
+.input-container.error input {
+    border-color: #842029;
+}
+
+.input-container.error p {
+    color: #842029;
+}
