@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('./partials/head') %>
+    <title>DH News</title>
+</head>
+<body>
+    <%- include ('./partials/header') %>
+    <div class="container">
+        <main>
+            <ul class="posts-list">
+                <% for (const post of posts) { %>
+                    <li>
+                        <%- include ('./partials/post-card', { post }) %>
+                    </li>
+                <% } %>
+            </ul>
+        </main>
+    </div>
+    <%- include ('./partials/footer') %>
+</body>
+</html>

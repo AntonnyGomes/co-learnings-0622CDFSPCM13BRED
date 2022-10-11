@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('./partials/head') %>
+    <title>DH News - Cadastro</title>
+</head>
+<body>
+    <%- include ('./partials/header') %>
+    <div class="container">
+        <main>
+            <% if (locals.alert) { %>
+                <div class="spacing-bottom">
+                    <%- include ('./partials/alert') %>
+                </div>
+            <% } %>
+            <form action="/cadastro" method="post">
+                <div class="input-container">
+                    <label for="input-email">Email</label>
+                    <input type="email" name="email" id="input-email">
+                </div>
+                <div class="input-container">
+                    <label for="input-password">Senha</label>
+                    <input type="password" name="password" id="input-password">
+                </div>
+                <button type="submit">Cadastrar-se</button>
+            </form>
+        </main>
+    </div>
+    <%- include ('./partials/footer') %>
+</body>
+</html>
