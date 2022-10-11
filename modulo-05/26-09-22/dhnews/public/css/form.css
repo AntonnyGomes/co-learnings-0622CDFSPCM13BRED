@@ -1,0 +1,7 @@
+form, .input-container {
+    margin-bottom: 1rem; /* 16px */
+}
+
+.input-container input, .input-container textarea {
+    width: 100%;
+}

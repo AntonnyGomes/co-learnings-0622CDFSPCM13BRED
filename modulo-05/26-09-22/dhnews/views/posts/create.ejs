@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ('../partials/head') %>
+    <title>DH News</title>
+</head>
+<body>
+    <%- include ('../partials/header') %>
+    <div class="container">
+        <form action="/posts/store" method="post" enctype="multipart/form-data">
+            <div class="input-container">
+                <label for="input-title">Título</label>
+                <input type="text" name="title" id="input-title">
+            </div>
+            <div class="input-container">
+                <label for="input-subject">Assunto</label>
+                <input type="text" name="subject" id="input-subject">
+            </div>
+            <div class="input-container">
+                <label for="input-content">Conteúdo</label>
+                <textarea name="content" id="input-content" rows="4" cols="50"></textarea>
+            </div>
+            <div class="input-container">
+                <label for="input-image">Imagem</label>
+                <input type="file" name="image" id="input-image">
+            </div>
+            <button type="submit">Cadastrar post</button>
+        </form>
+    </div>
+    <%- include ('../partials/footer') %>
+</body>
+</html>
