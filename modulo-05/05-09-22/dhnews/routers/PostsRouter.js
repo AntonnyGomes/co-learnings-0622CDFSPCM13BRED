@@ -9,6 +9,7 @@ const router = express.Router();
 
 // definindo rotas
 router.get('/create', postsController.create);
+router.get('/store', postsController.store);
 router.get('/:id', postsController.index);
 
 module.exports = router;
