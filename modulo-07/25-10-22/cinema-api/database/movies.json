@@ -1,0 +1,65 @@
+[
+    {
+        "id": "1665892217290",
+        "title": "Suicide Squad",
+        "runtime": 155,
+        "director": "David Ayer",
+        "awards": [
+            "1 - Oscar"
+        ],
+        "actors": [
+            "Will Smith",
+            "Jared Leto",
+            "Margot Robbie"
+        ],
+        "genre": [
+            "action",
+            "adventure",
+            "fantasy"
+        ],
+        "poster": "https://m.media-amazon.com/images/M/MV5BMjM1OTMxNzUyM15BMl5BanBnXkFtZTgwNjYzMTIzOTE@._V1_SX300.jpg",
+        "releasedAt": "2022-10-16T03:45:57.309Z"
+    },
+    {
+        "id": 1665892236289,
+        "title": "Suicide Squad",
+        "runtime": 123,
+        "director": "David Ayer",
+        "awards": [
+            "1 - Oscar"
+        ],
+        "actors": [
+            "Will Smith",
+            "Jared Leto",
+            "Margot Robbie"
+        ],
+        "genre": [
+            "action",
+            "adventure",
+            "fantasy"
+        ],
+        "poster": "https://m.media-amazon.com/images/M/MV5BMjM1OTMxNzUyM15BMl5BanBnXkFtZTgwNjYzMTIzOTE@._V1_SX300.jpg",
+        "releasedAt": "2022-10-16T03:45:57.309Z"
+    },
+    {
+        "id": 1665892242257,
+        "title": "Suicide Squad",
+        "runtime": 123,
+        "director": "David Ayer",
+        "awards": [
+            "1 - Oscar"
+        ],
+        "actors": [
+            "Will Smith",
+            "Jared Leto",
+            "Margot Robbie"
+        ],
+        "genre": [
+            "action",
+            "adventure",
+            "fantasy"
+        ],
+        "poster": "https://m.media-amazon.com/images/M/MV5BMjM1OTMxNzUyM15BMl5BanBnXkFtZTgwNjYzMTIzOTE@._V1_SX300.jpg",
+        "releasedAt": "2022-10-16T03:45:57.309Z"
+    }
+]
